@@ -19,6 +19,7 @@ class EmailThread(threading.Thread):
 	def run(self):
 		self.email.send(fail_silently=True)
 
+
 class Feedback(models.Model):
     name=models.CharField(max_length=30)
     email=models.EmailField(null=False)
