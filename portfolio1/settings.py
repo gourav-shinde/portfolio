@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'y=c#@xb%0p2im!bi(e_)sh7&2a^!k$oi^6i$j^%dzx+-*l8*hx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG')
-
-ALLOWED_HOSTS = [".herokuapp.com"]
+DEBUG = os.getenv('DEBUG')
+DEBUG_PROPAGATE_EXCEPTIONS = True
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -109,6 +109,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+# Logging
 
 
 # Internationalization
