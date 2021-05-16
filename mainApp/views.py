@@ -13,6 +13,8 @@ from .serializer import FeedbackSerializer
 def homePage(request):
     return render(request,"index.html",{})
 
+
+
 @api_view(['POST',])
 def getfeedback(request):
     if request.method=="POST":
@@ -22,3 +24,4 @@ def getfeedback(request):
             serializer.save()
             return Response(serializer.data,status=status.HTTP_200_OK)
         return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
+
