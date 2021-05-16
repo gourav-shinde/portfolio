@@ -89,7 +89,7 @@ DATABASES['default'].update(db_from_env)
 EMAIL_USE_TLS=True
 EMAIL_HOST="smtp.gmail.com"
 EMAIL_HOST_USER="gauravshinde696969@gmail.com"
-EMAIL_HOST_PASSWORD="Goku11prime"
+EMAIL_HOST_PASSWORD="Goku11prime1"
 EMAIL_PORT=587
 
 # Password validation
