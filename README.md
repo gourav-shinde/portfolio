@@ -11,4 +11,4 @@ Personal Protfolio.
 
 ## Note
 
-- Feedback fuctionality is working with email acknowledgement.
+- Feedback fuctionality with email acknowledgement.
